@@ -1,0 +1,22 @@
+name: "Infinitude"
+description: "An alternative web service for Carrier Infinity Touch and compatible thermostats."
+url: https://github.com/nebulous/infinitude
+version: "0.1.0"
+slug: "infinitude"
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+ports:
+  3000/tcp: 3000
+ports_description:
+  3000/tcp: "Proxy for Carrier Inifity/Bryant Evolution"
+webui: http://[HOST]:[PORT:3000]
+options:
+  APP_SECRET: []
+  PASS_REQS: 1020
+  MODE: "production"
+  SERIAL_TTY: []
+  SERIAL_SOCKET: []
